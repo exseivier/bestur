@@ -8,7 +8,7 @@
 #   Author:     Javier Montalvo-Arredondo.
 
 from sys import argv, exit, path
-path.append("/home/piruvato/src/modules/python/useq")
+path.append("path/to/sequences/lib")
 from sequences import SEQ_CONTAINER, SEQUENCE
 
 def load(filename, sequence_type="dna"):
