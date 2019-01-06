@@ -247,33 +247,3 @@ class SEQ_CONTAINER(object):
         """
         self.counter = 0
 
-
-
-#################################
-#///////////////////////////////#
-#           FUNCTIONS           #
-#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
-#################################
-
-#   [TESTING] - [OK]
-def load(filename, sequence_type="dna"):
-    """
-        Loads the sequences from fasta file and stores them in
-        a SEQ_CONTAINER object.
-        Requires the fasta file name.
-    """
-    container = None
-    FHIN = open(filename, "r")
-    container = SEQ_CONTAINER(filename)
-    for line in FHIN:
-        line = line.strip("\n")
-        if line[0] == ">":
-            name = line[1:] # [WARNING!] - ">" sign from header was removed!
-        else:
-            seq = SEQUENCE(name, line, sequence_type)
-            container.add_last([seq])
-    FHIN.close()
-
-    return container
-
-
