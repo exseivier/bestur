@@ -83,6 +83,10 @@ def split_seqs(cont, size):
         seq_obj = cont.next_at(i)
         seq_len = seq_obj.length()
         seq_name = seq_obj.name
+        # MAKING SHORT THE NAME ~
+        seq_name = seq_name.split(" ")[0]
+        seq_name = seq_name[:10] if len(seq_name) > 10 else seq_name
+        # ~ 20190108 MODIFIED.
         sequence = seq_obj.sequence
         for j in xrange(seq_len-size+1):
             splited_seq_name = seq_name + "_f" + str(j)

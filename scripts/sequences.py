@@ -154,8 +154,9 @@ class SEQ_CONTAINER(object):
             self.sequences = []
             self.leng = len(self.sequences)
         else:
-            self.add_last(item)
-
+            self.sequences = []
+            self.add_last([item])
+            
     #   [TESTING] - [OK]
     def __str__(self):
         """
