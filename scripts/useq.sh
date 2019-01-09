@@ -28,14 +28,17 @@ echo "[MESSAGE] - build-db & split-genome processess finished"
 # SAME FOLDER WERE THIS SCRIPT WAS LAUNCHED.
 
 # MAPPING WITH BOWTIE2
-map build-db split-genome.${THIS_PROCESS_PID}.fas mapped.${THIS_PROCESS_PID}.sam
+map build.db split-genome.${THIS_PROCESS_PID}.fas mapped.${THIS_PROCESS_PID}.sam
 # MAPPING OUTPUT FILENAME WAS HARDCODED ALSO (mapped.${THIS_PROCESS_PID}.sam)
 
-# SAM <==> BAM
-
-# SELECT UNMAPPED READS
+# SAM <==> BAM & SELECT THOSE UNMAPPED READS
+samtools view -bS -f 4 -T $PATH_QUERY_GENOME -o mapped.${THIS_PROCESS_PID}.bam mapped.${THIS_PROCESS_PID}.sam 
 
 # BAM <==> FASTA (NEED TO FIND THE TOOL OR TO WRITE IT)
+samtools fasta --reference ${PATH_QUERY_GENOME} mapped.${THIS_PROCESS_PID}.bam > unmapped.${THIS_PROCESS_PID}.fas
+
+# MAPPING UNMAPPED REDAS TO REFERENCE GENOME.
+bowtie2 -x build.db -fU unmapped.${THIS_PROCESS_PID}.fas -S unique.${THIS_PROCESS_PID}.sam
 
 # 
 
