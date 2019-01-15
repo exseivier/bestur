@@ -7,8 +7,7 @@
 #
 #   Author:     Javier Montalvo-Arredondo.
 
-from sys import argv, exit, path
-path.append("path/to/sequences/lib")
+from sys import argv, exit
 from sequences import SEQ_CONTAINER, SEQUENCE
 
 def load(filename, sequence_type="dna"):
