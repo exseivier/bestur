@@ -5,6 +5,13 @@ PATH_QUERY_GENOME=$2
 SIZE=$3
 THIS_PROCESS_PID=$RANDOM
 
+if [ $PATH_GENOMES_DB == "--help" ];
+then
+	echo "USAGE"
+	echo "useq [PATH_GENOMES_DB] [PATH_QUERY_GENOME] [SIZE]"
+	exit 0
+fi
+
 # BUILDING INDEXES FROM DATABASE GENOMES
 build-db $PATH_GENOMES_DB
 # ASKING FOR THE PID OF THE LAST PROCESS SENT BY THIS BASH SESSION
@@ -59,5 +66,12 @@ echo "[MESSAGE!] - Assembling unique reads"
 [ -d "cuff_out.${THIS_PROCESS_PID}" ] || mkdir cuff_out.${THIS_PROCESS_PID}
 cufflinks -o cuff_out.${THIS_PROCESS_PID} unique.${THIS_PROCESS_PID}.sort.bam
 
+echo "[MESSAGE!] - Extracting exons from gtf"
 
+gffread cuff_out.${THIS_PROCESS_PID}/transcripts.gtf -w cuff_out.${THIS_PROCESS_PID}/exons.fa -g $PATH_QUERY_GENOME
+
+echo "[MESSAGE!] - Calculating MFE"
+
+[ -d RNAfold.${THIS_PROCESS_PID} ] || mkdir RNAfold.${THIS_PROCESS_PID}
+RNAfold -i cuff_out.${THIS_PROCESS_PID}/exons.fa --noPS --noLP -d2 -p > RNAfold.${THIS_PROCESS_PID}/exons.MFE.txt
 
