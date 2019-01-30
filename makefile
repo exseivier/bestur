@@ -27,7 +27,7 @@ else
 endif
 
 ifdef BOWTIE
-	@echo "[MESSAGE] - Bowtie2... YES!"
+	@echo "[MESSAGE!] - Bowtie2... YES!"
 else
 	@echo "[ERROR!] - Bowtie2... NO!"
 	@echo "[ERROR!] - Install Bowtie2 to continue"
@@ -49,7 +49,7 @@ else
 	@echo "[ERROR!] - Install Cufflinks to continue"
 	@exit 1
 endif
-ifdef RNAfold
+ifdef RNAFOLD
 	@echo "[MESSAGE!] - RNAfold... YES!"
 else
 	@echo "[ERROR!] - RNAfold... NO!"
@@ -78,4 +78,13 @@ end: $(binary_path)/useq $(binary_path)/build-db $(binary_path)/split-genome $(b
 	@echo "[MESSAGE!] - Testing USEQ asking for help"
 	@useq --help
 
-
+clear:
+	@echo "[MESSAGE!] - Cleaning useq installation"
+	@unlink $(binary_path)/useq
+	@unlink $(binary_path)/build-db
+	@unlink $(binary_path)/split
+	@unlink $(binary_path)/split-genome
+	@rm $(python_lib)/dnaprocedures.py
+	@rm $(python_lib)/dnaprocedures.pyc
+	@rm $(python_lib)/sequences.py
+	@rm $(python_lib)/sequences.pyc
