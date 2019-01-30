@@ -121,3 +121,29 @@ def write_to_file(cont, format, filename):
 
     return True
 
+def loadMEF(input_file):
+    """(STR) -> HASH[STR:INT]
+    Loads the result file from RNAfold program using the following parameter
+    RNAfold -i input.fas -p -d2 --noPS --noLP > output.txt
+    The data from input_file is stored at a hash table where key is the
+    sequence name and value is the MEF of thermodynamic ensemble of the
+    predicted secondary structure of RNA.
+    Requires:
+        The name of the resulting file from RNAfold.
+    """
+    FHIN = open(input_file, "r")
+    hash_table = {}
+    for line in FHIN:
+        line = line.strip("\n")
+        if line[0] == ">":
+            name = line[1:11]
+            hash_table[name] = 0
+        elif line[-1] == "]":
+            hash_table[name] = line.split(" ")[1][1:-1]
+        else:
+            print "[ERROR!] - MEF format file is wrong or is corrupted"
+            exit(1)
+
+    return hash_table
+
+
