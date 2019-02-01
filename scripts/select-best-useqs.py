@@ -9,5 +9,4 @@ mfe = dp.loadMFE(file_input)
 FHOUT = open(file_output, "w+")
 for key, value in sorted(mfe.iteritems(), key=lambda (k,v): (v["nMFE"],k), reverse=True):
     FHOUT.write("%s\t%s\n" % (key, value))
-
-
+FHOUT.close()
