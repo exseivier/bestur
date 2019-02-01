@@ -143,7 +143,7 @@ def loadMFE(input_file):
         elif line[-1] == "]":
             hash_table[name]["MFE"] = float(line.split(" ")[1][1:-1])
             hash_table[name]["nMFE"] = (hash_table[name]["MFE"] / hash_table[name]["lenSEQ"]) * 100
-
+    FHIN.close()
     return hash_table
 
 
