@@ -75,3 +75,9 @@ echo "[MESSAGE!] - Calculating MFE"
 [ -d RNAfold.${THIS_PROCESS_PID} ] || mkdir RNAfold.${THIS_PROCESS_PID}
 RNAfold -i cuff_out.${THIS_PROCESS_PID}/exons.fa --noPS --noLP -d2 -p > RNAfold.${THIS_PROCESS_PID}/exons.MFE.txt
 
+echo "[MESSAGE!] - Selecting BEST unique regions"
+select-best-useqs RNAfold.${THIS_PROCESS_PID}/exons.MFE.txt best.useqs.txt
+
+echo "[MESSAGE!] - Cleaning the mess"
+rm *.ps
+

@@ -121,7 +121,7 @@ def write_to_file(cont, format, filename):
 
     return True
 
-def loadMEF(input_file):
+def loadMFE(input_file):
     """(STR) -> HASH[STR:INT]
     Loads the result file from RNAfold program using the following parameter
     RNAfold -i input.fas -p -d2 --noPS --noLP > output.txt
@@ -137,12 +137,12 @@ def loadMEF(input_file):
         line = line.strip("\n")
         if line[0] == ">":
             name = line[1:11]
-            hash_table[name] = 0
+            hash_table[name] = {}
+        elif line[0] in ["A", "C", "G", "T", "U"]:
+            hash_table[name]["lenSEQ"] = len(line)
         elif line[-1] == "]":
-            hash_table[name] = line.split(" ")[1][1:-1]
-        else:
-            print "[ERROR!] - MEF format file is wrong or is corrupted"
-            exit(1)
+            hash_table[name]["MFE"] = float(line.split(" ")[1][1:-1])
+            hash_table[name]["nMFE"] = (hash_table[name]["MFE"] / hash_table[name]["lenSEQ"]) * 100
 
     return hash_table
 
