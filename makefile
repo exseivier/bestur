@@ -61,7 +61,7 @@ copy: scripts/*.py scripts/*.sh
 	@echo "[MESSAGE!] - Copying python libraries to $(python_lib)"
 	@cp scripts/dnaprocedures.py scripts/sequences.py $(python_lib)
 	@echo "[MESSAGE!] - Copying scripts to $(source_path)"
-	@cp scripts/*.sh scripts/split.py $(source_path)
+	@cp scripts/*.sh scripts/split.py scripts/select-best-useqs.py $(source_path)
 
 
 linking: copy $(source_path)/*.sh $(source_path)/*.py
@@ -70,6 +70,7 @@ linking: copy $(source_path)/*.sh $(source_path)/*.py
 	@ln -s $(source_path)/build-db.sh $(binary_path)/build-db
 	@ln -s $(source_path)/split-genome.sh $(binary_path)/split-genome
 	@ln -s $(source_path)/split.py $(binary_path)/split
+	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
 	@echo "[MESSAGE!] - Assigning exe permission"
 	@chmod 755 $(source_path)/*
 
@@ -84,6 +85,7 @@ clear:
 	@unlink $(binary_path)/build-db
 	@unlink $(binary_path)/split
 	@unlink $(binary_path)/split-genome
+	@unlink $(binary_path)/select-best-useqs
 	@rm $(python_lib)/dnaprocedures.py
 	@rm $(python_lib)/dnaprocedures.pyc
 	@rm $(python_lib)/sequences.py
