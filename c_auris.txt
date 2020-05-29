@@ -1,0 +1,17 @@
+#BESTur: BLAST-Empowered Search Tool to identify unique regions, an application for pathogen microorganism detection
+#Antonie van Leeuwenhoek Journal of Microbiology
+#Javier Montalvo-Arredondo 1a, Lina Riego-Ruiz 2b, Irene Castaño 2c, Alejandro De Las Penas 2d
+#1. Universidad Autónoma Agraria Antonio Narro. Calzada Antonio Narro 1923, Buenavista, Saltillo Coahuila, México. C.P. 25315.
+#2. Instituto Potosino de Investigación Científica y Tecnológica A.C. Camino a la Presa San José 2055, col. Lomas 4a Sección, San Luis Potosí, SLP, México. C.P. 78216.
+#a. Correspondence: buitrejma@gmail.com. ORCID: https://orcid.org/0000-0003-4651-5387
+#b. lina@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2883-8871
+#c. icastano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-5968-2101
+#d. cano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2933-2856
+
+PID	DB	QUERY	WINDOW_SIZE	STEPS	EVAL	IDENT	QCOV	TASK	REWARD	PENALTY	GOPEN	GEXT	MIN_FRAGS_PER_TRANSFRAG	OVERLAP_RADIUS	EXPERIMENT_NAME	NoSEQS	MEAN	MEDIAN	N50_UP	N50_DOWN	L50	MIN_LEN	I10	Q25	Q75	I90	MAX_LEN	SD	SDe	UNMAPPED	TOTAL_SEQS
+736414736	/home/piruvato/dbase/candidas/NoCaur4.txt	/home/piruvato/dbase/query/Cauris/Cauris.genome.fna	250	100	1	30	10	blastn	1	-1	0	2	10	50	Candida_auris	 355	 1555.74366197	 1450	 1550	 1550	 154	 974	 1150	 1250	 1750	 2050	 3550	 414.788420891	 22.0146835829	24683	127371
+202331863	/home/piruvato/dbase/candidas/NoCaur4.txt	/home/piruvato/dbase/query/Cauris/Cauris.genome.fna	250	100	1	10	10	blastn	1	-1	0	2	10	50	Candida_auris	 355	 1555.74366197	 1450	 1550	 1550	 154	 974	 1150	 1250	 1750	 2050	 3550	 414.788420891	 22.0146835829	24683	127371
+767521874	/home/piruvato/dbase/candidas/NoCaur4.txt	/home/piruvato/dbase/query/Cauris/Cauris.genome.fna	250	100	1	10	30	blastn	1	-1	0	2	10	50	Candida_auris	 691	 1674.99131693	 1450	 1650	 1650	 288	 752	 1150	 1250	 1850	 2350	 5750	 610.974185213	 23.2425533878	30921	127371
+53798539	/home/piruvato/dbase/candidas/NoCaur4.txt	/home/piruvato/dbase/query/Cauris/Cauris.genome.fna	250	100	1	30	30	blastn	1	-1	0	2	10	50	Candida_auris	 691	 1674.99131693	 1450	 1650	 1650	 288	 752	 1150	 1250	 1850	 2350	 5750	 610.974185213	 23.2425533878	30921	127371
+
+

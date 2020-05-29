@@ -1,0 +1,24 @@
+#BESTur: BLAST-Empowered Search Tool to identify unique regions, an application for pathogen microorganism detection
+#Antonie van Leeuwenhoek Journal of Microbiology
+#Javier Montalvo-Arredondo 1a, Lina Riego-Ruiz 2b, Irene Castaño 2c, Alejandro De Las Penas 2d
+#1. Universidad Autónoma Agraria Antonio Narro. Calzada Antonio Narro 1923, Buenavista, Saltillo Coahuila, México. C.P. 25315.
+#2. Instituto Potosino de Investigación Científica y Tecnológica A.C. Camino a la Presa San José 2055, col. Lomas 4a Sección, San Luis Potosí, SLP, México. C.P. 78216.
+#a. Correspondence: buitrejma@gmail.com. ORCID: https://orcid.org/0000-0003-4651-5387
+#b. lina@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2883-8871
+#c. icastano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-5968-2101
+#d. cano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2933-2856
+
+PID	DB	QUERY	WINDOW_SIZE	STEPS	EVAL	IDENT	QCOV	TASK	REWARD	PENALTY	GOPEN	GEXT	MIN_FRAGS_PER_TRANSFRAG	OVERLAP_RADIUS	NoSEQS	MEAN	MEDIAN	N50_UP	N50_DOWN	L50	MIN_LEN	I10	Q25	Q75	I90	MAX_LEN	SD	SDe	UNMAPPED	TOTAL_SEQS
+203335874	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	5	1000	8	1060	970	1690	1360	3	400	400	640	1690	1900	1900	563.990881385	199.400888377	133	4502
+160558367	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	3	1000	13	896.153846154	700	1360	1240	4	340	400	550	1240	1690	1900	508.47055735	141.024358969	133	4502
+2851926062	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	10	50	4	707.5	625	1030	640	2	550	550	610	1030	1030	1030	218.231528428	109.115764214	133	4502
+841710446	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	10	200	5	838	640	1360	1030	2	550	550	610	1030	1360	1360	347.66363054	155.479902238	133	4502
+272569405	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	5	50	9	533.333333333	460	610	550	4	370	370	370	610	1030	1030	214.301189917	71.4337299725	133	4502
+1096714213	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	10	500	5	970	640	1690	1360	2	550	550	610	1360	1690	1690	520.912660626	232.9592239	133	4502
+1539712704	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	5	200	10	673	625	700	700	4	370	370	400	700	1360	1360	312.553995335	98.8382517045	133	4502
+170053241	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	10	1000	5	1228	1360	1900	1690	2	550	550	640	1690	1900	1900	609.893433314	272.752635184	133	4502
+9037938	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	3	50	17	468.823529412	400	550	460	7	310	310	340	550	640	1030	181.792544984	44.0911685246	133	4502
+1448922510	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	3	200	15	616	580	700	700	5	310	340	370	700	1030	1360	292.667534438	75.566432457	133	4502
+853413765	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	5	500	9	840	640	1360	1240	3	370	370	550	1240	1690	1690	469.574275275	156.524758425	133	4502
+1375112310	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425346.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_HT-SeG24__complete_genome.fna	250	30	1	50	30	blastn	1	-1	0	2	3	500	14	766.428571429	625	970	880	5	340	370	400	970	1360	1690	413.048835683	110.391944795	133	4502
+

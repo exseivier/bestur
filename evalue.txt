@@ -1,0 +1,16 @@
+#BESTur: BLAST-Empowered Search Tool to identify unique regions, an application for pathogen microorganism detection
+#Antonie van Leeuwenhoek Journal of Microbiology
+#Javier Montalvo-Arredondo 1a, Lina Riego-Ruiz 2b, Irene Castaño 2c, Alejandro De Las Penas 2d
+#1. Universidad Autónoma Agraria Antonio Narro. Calzada Antonio Narro 1923, Buenavista, Saltillo Coahuila, México. C.P. 25315.
+#2. Instituto Potosino de Investigación Científica y Tecnológica A.C. Camino a la Presa San José 2055, col. Lomas 4a Sección, San Luis Potosí, SLP, México. C.P. 78216.
+#a. Correspondence: buitrejma@gmail.com. ORCID: https://orcid.org/0000-0003-4651-5387
+#b. lina@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2883-8871
+#c. icastano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-5968-2101
+#d. cano@ipicyt.edu.mx. ORCID: https://orcid.org/0000-0002-2933-2856
+
+PID	DB	QUERY	WINDOW_SIZE	STEPS	EVAL	IDENT	QCOV	TASK	REWARD	PENALTY	GOPEN	GEXT	MIN_FRAGS_PER_TRANSFRAG	OVERLAP_RADIUS	EXPERIMENT_NAME	NoSEQS	MEAN	MEDIAN	N50_UP	N50_DOWN	L50	MIN_LEN	I10	Q25	Q75	I90	MAX_LEN	SD	SDe	UNMAPPED	TOTAL_SEQS
+2652624672	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425343.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_VT-SeAl1__complete_genome.fna	250	25	100	10	10	blastn	1	-1	0	2	10	50	evalue	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	0	5417
+206373517	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425343.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_VT-SeAl1__complete_genome.fna	250	25	0.1	10	10	blastn	1	-1	0	2	10	50	evalue	 6	 629.166666667	 637.5	 650	 650	 3	 525	 525	 550	 650	 775	 775	 88.6237364743	 36.1804889102	131	5417
+165454819	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425343.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_VT-SeAl1__complete_genome.fna	250	25	1	10	10	blastn	1	-1	0	2	10	50	evalue	 3	 650.0	 650	 775	 650	 2	 525	 525	 525	 775	 775	 775	 125.0	 72.1687836487	90	5417
+1017011703	/home/piruvato/dbase/allBac/NoSpodopteraExigua.txt	/home/piruvato/dbase/query/abac.semnp/HG425343.1_Spodoptera_exigua_multiple_nucleopolyhedrovirus_isolate_VT-SeAl1__complete_genome.fna	250	25	10	10	10	blastn	1	-1	0	2	10	50	evalue	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	 0	21	5417
+
