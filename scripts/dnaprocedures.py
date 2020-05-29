@@ -64,7 +64,7 @@ def get_lengths(cont):
 
     return seq_lengths
 
-def split_seqs(cont, size):
+def split_seqs(cont, size, steps):
     """(SEQ_COTAINER, INT) -> SEQ_CONTAINER
     Takes a SEQ_CONTAINER object and for every stored sequence it split
     the seq string into L-k kmers of 'size' size: where L is the sequence
@@ -84,10 +84,11 @@ def split_seqs(cont, size):
         seq_name = seq_obj.name
         # MAKING SHORT THE NAME ~
         seq_name = seq_name.split(" ")[0]
-        seq_name = seq_name[:10] if len(seq_name) > 10 else seq_name
+#        seq_name = seq_name[:10] if len(seq_name) > 10 else seq_name #  BUG. PRODUCESS A BUG
+                                                                     #  CREATING APARENT DUPLICATED SEQUENCES
         # ~ 20190108 MODIFIED.
         sequence = seq_obj.sequence
-        for j in xrange(seq_len-size+1):
+        for j in xrange(0, seq_len-size+1, steps):
             splited_seq_name = seq_name + "_f" + str(j)
             splited_seq = SEQUENCE(splited_seq_name, sequence[j:j+size], seq_obj.sequence_type)
             splited_seqs_container.add_last([splited_seq])
@@ -114,7 +115,7 @@ def write_to_file(cont, format, filename):
         try:
             FHOUT.write(str_out)
         except Exception:
-            print "[ERROR!] - In writing to file!"
+            print "[DNA-PROC][ERROR!] - In writing to file!"
             FHOUT.close()
             return False
     FHOUT.close()

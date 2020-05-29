@@ -1,0 +1,86 @@
+Begin
+PID=1722226676
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=25
+TOTAL_SEQS=509457
+COMMAND=blastn -query /home/piruvato/projects/useq_progressive/query/splited-genome.Cauris.genome.f.250.25.fas 	-db /home/piruvato/projects/useq_progressive/dbase/NoCaur4.db 	-out /home/piruvato/projects/useq_progressive/query/Cauris.genome.blast 	-evalue 100 	-outfmt 6 	-perc_identity 10 	-subject_besthit 	-max_target_seqs 2 	-qcov_hsp_perc 10 	-task blastn 	-reward 1 	-penalty -1 	-gapopen 0 	-gapextend 2
+UNMAPPED_SEQS=10
+MIN_FRAGS_PER_TRANSFRAG=3
+OVERLAP_RADIUS=50
+EXPERIMENT_NAME=evalue
+End
+Begin
+PID=353827941
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=125
+TOTAL_SEQS=101898
+COMMAND=blastn -query /home/piruvato/projects/useq_progressive/query/splited-genome.Cauris.genome.f.250.125.fas 	-db /home/piruvato/projects/useq_progressive/dbase/NoCaur4.db 	-out /home/piruvato/projects/useq_progressive/query/Cauris.genome.blast 	-evalue 100 	-outfmt 6 	-perc_identity 10 	-subject_besthit 	-max_target_seqs 2 	-qcov_hsp_perc 10 	-task blastn 	-reward 1 	-penalty -1 	-gapopen 0 	-gapextend 2
+UNMAPPED_SEQS=2
+MIN_FRAGS_PER_TRANSFRAG=3
+OVERLAP_RADIUS=50
+EXPERIMENT_NAME=evalue
+End
+Begin
+PID=912432206
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=200
+TOTAL_SEQS=63690
+COMMAND=blastn -query /home/piruvato/projects/useq_progressive/query/splited-genome.Cauris.genome.f.250.200.fas 	-db /home/piruvato/projects/useq_progressive/dbase/NoCaur4.db 	-out /home/piruvato/projects/useq_progressive/query/Cauris.genome.blast 	-evalue 100 	-outfmt 6 	-perc_identity 10 	-subject_besthit 	-max_target_seqs 2 	-qcov_hsp_perc 10 	-task blastn 	-reward 1 	-penalty -1 	-gapopen 0 	-gapextend 2
+UNMAPPED_SEQS=1
+MIN_FRAGS_PER_TRANSFRAG=3
+OVERLAP_RADIUS=50
+EXPERIMENT_NAME=evalue
+End
+Begin
+PID=319612410
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=200
+TOTAL_SEQS=63690
+COMMAND=blastn -query /home/piruvato/projects/useq_progressive/query/splited-genome.Cauris.genome.f.250.200.fas 	-db /home/piruvato/projects/useq_progressive/dbase/NoCaur4.db 	-out /home/piruvato/projects/useq_progressive/query/Cauris.genome.blast 	-evalue 100 	-outfmt 6 	-perc_identity 10 	-subject_besthit 	-max_target_seqs 2 	-qcov_hsp_perc 10 	-task blastn 	-reward 1 	-penalty -1 	-gapopen 0 	-gapextend 2
+UNMAPPED_SEQS=1
+MIN_FRAGS_PER_TRANSFRAG=3
+OVERLAP_RADIUS=50
+EXPERIMENT_NAME=evalue
+End
+Begin
+PID=320232990
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=200
+TOTAL_SEQS=63690
+Begin
+PID=264789561
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=200
+TOTAL_SEQS=63690
+Begin
+PID=759210626
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=200
+TOTAL_SEQS=63690
+Begin
+PID=121641517
+DB Path=/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
+QUERY=/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
+WINDOW_SIZE=250
+STEPS=50
+TOTAL_SEQS=254734
+COMMAND=blastn -query /home/piruvato/projects/useq_progressive/query/splited-genome.Cauris.genome.f.250.50.fas 	-db /home/piruvato/projects/useq_progressive/dbase/NoCaur4.db 	-out /home/piruvato/projects/useq_progressive/query/Cauris.genome.blast 	-evalue 100 	-outfmt 6 	-perc_identity 10 	-subject_besthit 	-max_target_seqs 2 	-qcov_hsp_perc 30 	-task blastn 	-reward 1 	-penalty -1 	-gapopen 0 	-gapextend 2
+UNMAPPED_SEQS=7054
+MIN_FRAGS_PER_TRANSFRAG=3
+OVERLAP_RADIUS=50
+EXPERIMENT_NAME=evalue
+End

@@ -90,9 +90,9 @@ class SEQUENCE(object):
         if ranges == None:
             ranges = [0, self.leng]
         elif max(ranges) > self.leng:
-            return "[ERROR!] - Index out of range"
+            return "[SEQUENCE][ERROR!] - Index out of range"
         elif min(ranges) < 0:
-            return "[ERROR!] - Index out of range"
+            return "[SEQUENCE][ERROR!] - Index out of range"
         else:
             return self.sequence[ranges[0]:ranges[1]]
 
@@ -229,7 +229,7 @@ class SEQ_CONTAINER(object):
             Requires an index
         """
         if index == self.leng or index < 0:
-            return "[ERROR!] - Index out of range."
+            return "[SEQUENCE][ERROR!] - Index out of range."
         else:
             return self.sequences[index]
     
