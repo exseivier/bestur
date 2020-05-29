@@ -1,9 +1,9 @@
 ##
 experiment_name="evalue"
 
-query="/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna"
+query="/path/to/query/genome.fna"
 
-db="/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt"
+db="/path/to/database/database.txt"
 
 declare -a laxo1=(1 -1 0 2)
 declare -a laxo2=(1 -1 1 2)
