@@ -55,7 +55,7 @@ do
 								p2=$([ ${p:2:2} == "A" ] && echo 10 || echo ${p:2:2})
 								p3=$([ ${p:4:2} == "A" ] && echo 10 || echo ${p:4:2})
 								p4=$([ ${p:6:2} == "A" ] && echo 10 || echo ${p:6:2})
-								./useq.sh --query $query --db $db --size $size --steps $step --task blastn --evalue $evalue --qcov $q --identity $i --reward $p1 --penalty $p2 --gopen $p3 --gext $p4 --min_frags_per_transfrag $minf --overlap_radius $overlap_r --experiment_name $experiment_name
+								./useq_progressive2.sh --query $query --db $db --size $size --steps $step --task blastn --evalue $evalue --qcov $q --identity $i --reward $p1 --penalty $p2 --gopen $p3 --gext $p4 --min_frags_per_transfrag $minf --overlap_radius $overlap_r --experiment_name $experiment_name
 							done
 						done
 					done
