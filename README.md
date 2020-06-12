@@ -17,4 +17,20 @@ To install this package. After download the package, decompress it and sotre it 
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
 
 ### Options
---query       
+--query                       Fasta file of the query genome.
+--db                          Plain text file with the name of the fasta genomes of the database.
+--size                        Window size in nucleotides.
+--steps                       Window step size in nucleotides.
+--task                        Blastn task type. [blastn | megablast | discontiguous megablast].
+--evalue                      Expected e-value cutoff.
+--qcov                        Percentage of Query High Scoring Pairwise Segment coverage cutoff.
+--identity                    Percentage of identity cutoff.
+--reward                      Reward score for a succesful match between compared nucleotides in alignment.
+--penalty                     Penalty score for a mismatch between compared nucleotides in alignment.
+--gopen                       Penalty score for the gap existence.
+--gext                        Penalty score for every nulceotide the gap extends.
+--min_frags_per_transfrag     Minimum number of fragments covering a query genome region to be considered in the assembling.
+--overlap_radius              The minimum number of nucleotides of the gap between two separated islands of mapped fragments allowed to assembly them.
+--experiment_name             Name of the experiment.
+
+
