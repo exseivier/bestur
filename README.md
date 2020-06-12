@@ -17,8 +17,8 @@ To install this package. After download the package, decompress it and sotre it 
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
 
 ### Options
---query                       Fasta file of the query genome.
---db                          Plain text file with the name of the fasta genomes of the database.
+--query                       Fasta file of the query genome.</br>
+--db                          Plain text file with the name of the fasta genomes of the database.</br>
 --size                        Window size in nucleotides.
 --steps                       Window step size in nucleotides.
 --task                        Blastn task type. [blastn | megablast | discontiguous megablast].
