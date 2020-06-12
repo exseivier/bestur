@@ -19,7 +19,7 @@ useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [
 ### Options
 --query                       Fasta file of the query genome.</br>
 --db                          Plain text file with the name of the fasta genomes of the database.</br>
---size                        Window size in nucleotides.
+--size                        Window size in nucleotides.  
 --steps                       Window step size in nucleotides.
 --task                        Blastn task type. [blastn | megablast | discontiguous megablast].
 --evalue                      Expected e-value cutoff.
