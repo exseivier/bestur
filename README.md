@@ -8,4 +8,9 @@ BESTur maps the query genome fragments (QGF) to all genomes from batabase with B
 # About requirements
 I tested BESTur in a 64-bit-AMD-processor computer in GNU/Linux Debian distro operating system (version 9). I worte the pipeline main script in bash (version 4.4.12). I used the following bioinformatic armory to construct the pipeline: BLAST (2.8.1), Bowtie (2.3.5), Cufflinks (2.2.1), and gffread (from Cufflinks package). I also worte python scripts to glue the pipeline, and in this case I used the version 2.7.13. This pipeline uses two python libraries that shlould be installed in the python libaries path to be used in the scripts.
 
+# Installation
+[Currently working on a makefile file]
+
+To install this package. After download the package, decompress it and sotre it in a folder, then all the scripts in the scripts folder should be copied into the binary path or you can make symbolic links from storage folder pathways in the binary path. This binary path should be annotated in the PATH environment variable.
+
 # Usage
