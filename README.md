@@ -17,5 +17,4 @@ To install this package. After download the package, decompress it and sotre it 
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
 
 ### Options
-
-<item>--query</item>
+--query       
