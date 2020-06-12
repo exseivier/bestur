@@ -64,7 +64,3 @@ do
 		done
 	done
 done
-
-
-#/home/piruvato/projects/useq_progressive/query/Cauris.genome.fna
-#/home/piruvato/projects/useq_progressive/dbase/NoCaur4.txt
