@@ -73,7 +73,11 @@ linking: copy $(source_path)/*.sh $(source_path)/*.py
 #	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
 	@ln -s $(source_path)/format-seq.py $(binary_path)/format-seq
 	@ln -s $(source_path)/stats.py $(binary_path)/stats
-	@ln -s
+	@ln -s $(source_path)/summarise.py $(binary_path)/summarise
+	@ln -s $(source_path)/smy2gtf.py $(binary_path)/smy2gtf
+	@ln -s $(source_path)/primers-summary.sh $(binary_path)/primers-summary
+	@ln -s $(source_path)/p3input.py $(binary_path)/p3input
+	@ln -s $(source_path)/gimme-the-primers2.sh $(binary_path)/gimme-the-primers
 	@echo "[MESSAGE!] - Assigning exe permission"
 	@chmod 755 $(source_path)/*
 
