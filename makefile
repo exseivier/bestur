@@ -72,6 +72,8 @@ linking: copy $(source_path)/*.sh $(source_path)/*.py
 	@ln -s $(source_path)/split.py $(binary_path)/split
 #	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
 	@ln -s $(source_path)/format-seq.py $(binary_path)/format-seq
+	@ln -s $(source_path)/stats.py $(binary_path)/stats
+	@ln -s
 	@echo "[MESSAGE!] - Assigning exe permission"
 	@chmod 755 $(source_path)/*
 
