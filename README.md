@@ -11,7 +11,7 @@ I tested BESTur in a 64-bit-AMD-processor computer in GNU/Linux Debian distro op
 # Installation
 [Currently working on a makefile file]
 
-To install this package. After download the package, decompress it and sotre it in a folder, then all the scripts in the scripts folder should be copied into the binary path or you can make symbolic links from storage folder pathways in the binary path. This binary path should be annotated in the PATH environment variable.
+To install this package. After download the package, decompress it and sotre it in a folder, then all the scripts in the scripts folder should be copied into the binary path or you can make symbolic links of the scripts from storage folder pathway to the binary path. This binary path should be updated in the PATH bash environment variable.
 
 # Usage
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
