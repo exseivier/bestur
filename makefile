@@ -66,11 +66,11 @@ copy: scripts/*.py scripts/*.sh
 
 linking: copy $(source_path)/*.sh $(source_path)/*.py
 	@echo "[MESSAGE!] - Linking executable scripts to binary path"
-	@ln -s $(source_path)/useq.sh $(binary_path)/useq
+	@ln -s $(source_path)/useq_progressive2.sh $(binary_path)/useq_progressive2
 	@ln -s $(source_path)/build-db.sh $(binary_path)/build-db
 	@ln -s $(source_path)/split-genome.sh $(binary_path)/split-genome
 	@ln -s $(source_path)/split.py $(binary_path)/split
-	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
+#	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
 	@ln -s $(source_path)/format-seq.py $(binary_path)/format-seq
 	@echo "[MESSAGE!] - Assigning exe permission"
 	@chmod 755 $(source_path)/*
