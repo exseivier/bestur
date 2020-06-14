@@ -1,12 +1,12 @@
 binary_path="/usr/bin"
 python_lib="/usr/lib/python2.7"
-source_path="source"
+source_path="scripts"
 
 PYTHON := $(shell which python 2>/dev/null)
 BOWTIE := $(shell which bowtie2 2>/dev/null)
 SAMTOOLS := $(shell which samtools 2>/dev/null)
 CUFFLINKS := $(shell which cufflinks 2>/dev/null)
-RNAFOLD := $(shell which RNAfold 2>/dev/null)
+BLAST := $(shell which blastn 2>/dev/null)
 
 install: print_vars check_programs copy linking end
 
@@ -49,19 +49,19 @@ else
 	@echo "[ERROR!] - Install Cufflinks to continue"
 	@exit 1
 endif
-ifdef RNAFOLD
-	@echo "[MESSAGE!] - RNAfold... YES!"
+ifdef BLAST
+	@echo "[MESSAGE!] - BLAST... YES!"
 else
-	@echo "[ERROR!] - RNAfold... NO!"
-	@echo "[ERROR!] - Install RNAfold from Vienna Package to continue"
+	@echo "[ERROR!] - BLAST... NO!"
+	@echo "[ERROR!] - Install BLASTn from from NCBI to continue"
 	@exit 1
 endif
 
 copy: scripts/*.py scripts/*.sh
 	@echo "[MESSAGE!] - Copying python libraries to $(python_lib)"
 	@sudo cp scripts/dnaprocedures.py scripts/sequences.py $(python_lib)
-	@echo "[MESSAGE!] - Copying scripts to $(source_path)"
-	@cp scripts/*.sh scripts/split.py scripts/select-best-useqs.py scripts/format-seq.py $(source_path)
+#	@echo "[MESSAGE!] - Copying scripts to $(source_path)"
+#	@cp scripts/*.sh scripts/split.py scripts/select-best-useqs.py scripts/format-seq.py $(source_path)
 
 
 linking: copy $(source_path)/*.sh $(source_path)/*.py
