@@ -22,11 +22,13 @@ This command will copy python libraries to /usr/lib/python2.7 path and will make
 
 sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib install
 
-In order to uninstall this pipeline just type either one of the following commands.
+In order to uninstall this pipeline just type either one of the following commands depending on how you installed it.
+
+for default instalation.
 
 sudo make clear
 
-or 
+or for custom installation
 
 sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib clear
 
