@@ -14,7 +14,7 @@ To install this package. After download the package, decompress it and sotre it 
 
 [Beta version of makefile is available]
 
-To install this package using makefile. Decompress the porject folder and go inside. Once in there type the following command.
+To install this package using makefile. Decompress the project folder and go inside. Once in there type the following command.
 
 sudo make install
 
