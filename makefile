@@ -70,7 +70,6 @@ linking: copy $(source_path)/*.sh $(source_path)/*.py
 	@ln -s $(source_path)/build-db.sh $(binary_path)/build-db
 	@ln -s $(source_path)/split-genome.sh $(binary_path)/split-genome
 	@ln -s $(source_path)/split.py $(binary_path)/split
-#	@ln -s $(source_path)/select-best-useqs.py $(binary_path)/select-best-useqs
 	@ln -s $(source_path)/format-seq.py $(binary_path)/format-seq
 	@ln -s $(source_path)/stats.py $(binary_path)/stats
 	@ln -s $(source_path)/summarise.py $(binary_path)/summarise
@@ -84,16 +83,24 @@ linking: copy $(source_path)/*.sh $(source_path)/*.py
 end: $(binary_path)/useq $(binary_path)/build-db $(binary_path)/split-genome $(binary_path)/split $(binary_path)/format-seq
 	@echo "[MESSAGE!] - USEQ pipeline was installed correctly"
 	@echo "[MESSAGE!] - Testing USEQ asking for help"
-	@useq --help
+	@useq_progressive2 --help
 
 clear:
 	@echo "[MESSAGE!] - Cleaning useq installation"
-	@unlink $(binary_path)/useq
+	@echo "[MESSAGE!] - Unlinking executable scripts in binary path"
+	@unlink $(binary_path)/useq_progressive2
 	@unlink $(binary_path)/build-db
-	@unlink $(binary_path)/split
 	@unlink $(binary_path)/split-genome
-	@unlink $(binary_path)/select-best-useqs
-	@rm $(python_lib)/dnaprocedures.py
-	@rm $(python_lib)/dnaprocedures.pyc
-	@rm $(python_lib)/sequences.py
-	@rm $(python_lib)/sequences.pyc
+	@unlink $(binary_path)/split
+	@unlink $(binary_path)/format-seq
+	@unlink $(binary_path)/stats
+	@unlink $(binary_path)/summarise
+	@unlink $(binary_path)/smy2gtf
+	@unlink $(binary_path)/primers-summary
+	@unlink $(binary_path)/p3input
+	@unlink $(binary_path)/gimme-the-primers
+
+#	@rm $(python_lib)/dnaprocedures.py
+#	@rm $(python_lib)/dnaprocedures.pyc
+#	@rm $(python_lib)/sequences.py
+#	@rm $(python_lib)/sequences.pyc
