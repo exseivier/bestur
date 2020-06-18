@@ -9,9 +9,26 @@ BESTur maps the query genome fragments (QGF) to all genomes from batabase with B
 I tested BESTur in a 64-bit-AMD-processor computer in GNU/Linux Debian distro operating system (version 9). I worte the pipeline main script in bash (version 4.4.12). I used the following bioinformatic armory to construct the pipeline: BLAST (2.8.1), Bowtie (2.3.5), Cufflinks (2.2.1), and gffread (from Cufflinks package). I also worte python scripts to glue the pipeline, and in this case I used the version 2.7.13. This pipeline uses two python libraries that shlould be installed in the python libaries path to be used in the scripts.
 
 # Installation
-[Currently working on a makefile file]
 
 To install this package. After download the package, decompress it and sotre it in a folder, then all the scripts in the scripts folder should be copied into the binary path or you can make symbolic links of the scripts from storage folder pathway to the binary path. This binary path should be updated in the PATH bash environment variable.
+
+[Beta version of makefile is available]
+
+To install this package using makefile. Decompress the porject folder and go inside. Once in there type the following command.
+
+sudo make install
+
+This command will copy python libraries to /usr/lib/python2.7 path and will make link files in the path of the binaries /usr/bin to the scripts allocated in the scripts folder. You can change the paths modifying the variables binary_pth and python_lib as follow.
+
+sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib install
+
+In order to uninstall this pipeline just type either one of the following commands.
+
+sudo make clear
+
+or 
+
+sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib clear
 
 # Usage
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
