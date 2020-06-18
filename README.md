@@ -18,7 +18,7 @@ To install this package using makefile. Decompress the porject folder and go ins
 
 sudo make install
 
-This command will copy python libraries to /usr/lib/python2.7 path and will make link files in the path of the binaries /usr/bin to the scripts allocated in the scripts folder. You can change the paths modifying the variables binary_pth and python_lib as follow.
+This command will copy python libraries to /usr/lib/python2.7 path and will make link files in the path of the binaries /usr/bin to the scripts allocated in the scripts folder. You can change the paths modifying the variables binary_path and python_lib as follow.
 
 sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib install
 
