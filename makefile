@@ -53,7 +53,7 @@ ifdef BLAST
 	@echo "[MESSAGE!] - BLAST... YES!"
 else
 	@echo "[ERROR!] - BLAST... NO!"
-	@echo "[ERROR!] - Install BLASTn from from NCBI to continue"
+	@echo "[ERROR!] - Install BLASTn to continue"
 	@exit 1
 endif
 
