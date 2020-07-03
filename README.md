@@ -36,6 +36,7 @@ sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib clear
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
 
 ### Options
+~~~
 --query ->                      Fasta file of the query genome.  
 --db    ->                      Plain text file with the name of the fasta genomes of the database.  
 --size  ->                      Window size in nucleotides.  
@@ -51,5 +52,6 @@ useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [
 --min_frags_per_transfrag ->    Minimum number of fragments covering a query genome region to be considered in the assembling.  
 --overlap_radius        ->      The minimum number of nucleotides of the gap between two separated islands of mapped fragments allowed to assembly them.  
 --experiment_name       ->      Name of the experiment.  
+~~~
 
-
+Inside scripts folder there is a wrapper script called *launcher.sh*. In order to use it to execute BESTur, it is needed to change the path to candida genomes database (candidaDB) file and the path of the query genome (query) once this package is installed.
