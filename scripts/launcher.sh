@@ -1,10 +1,11 @@
 ##
 experiment_name="evalue"
 
-query="/path/to/query/genome.fna"
+query="/path/to/query/Cauris.genome.fna"
 
-db="/path/to/database/database.txt"
+db="/path/to/candidaDB/NoCaur4.txt"
 
+#	REWARD FOR A MATCH AND PENALTY FOR A MISMATCH, GAP EXISTENCE AND GAP EXTENSION.
 declare -a laxo1=(1 -1 0 2)
 declare -a laxo2=(1 -1 1 2)
 declare -a moderate1=(3 -2 5 5)
@@ -15,6 +16,8 @@ declare -a hard2=(2 -7 4 2)
 declare -a hard3=(2 -5 2 4)
 declare -a hard4=(2 -5 4 2)
 declare -a names=(laxo1)
+
+#	ARRAY VARIABLE TO STORE AND MANAGE ALIGNMENT SCORING.
 declare -A parameters=(\
 	[laxo1]=${laxo1[@]} \
 	[laxo2]=${laxo2[@]} \
@@ -26,6 +29,7 @@ declare -A parameters=(\
 	[hard3]=${hard3[@]}\
 	[hard4]=${hard4[@]})
 
+#	SPLITING, MAPPING AND ASSEMNLING PARAMETERS
 declare -a window_size=(250)
 declare -a identity=(10)
 declare -a qcov=(30)
@@ -34,6 +38,7 @@ declare -a min_frags_per_transfrag=(3)
 declare -a overlap_radius=(50)
 declare -a evalues=(100)
 
+#	MAIN WRAPPER LOOP
 for name in ${names[@]};
 do
 	for size in ${window_size[@]};
