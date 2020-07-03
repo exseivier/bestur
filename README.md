@@ -1,3 +1,5 @@
+![BESTur logo](/logo/BESTur_logo.png)
+
 # Introduction to BESTur
 BLAST-Empowered Search Tool to find unique regions. It is a command pipeline I worte in Bash using bioinforatics armory such as: BLAST, Bowtie mapper, Cufflinks assembler, gffread tool, and custom scripts in python to glue the BESTur pipeline. This pipeline is useful to discover unique regions in a query genome (i.e. a pathogen genome). I defined unique region of a genome as a subsequence of it which is absent or is very dissimilar to all possible subsequences of other species genomes.
 
