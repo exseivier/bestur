@@ -54,4 +54,4 @@ useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [
 --experiment_name       ->      Name of the experiment.  
 ~~~
 
-Inside scripts folder there is a wrapper script called *launcher.sh*. In order to use it to execute BESTur, it is needed to change the path to candida genomes database (candidaDB) file and the path of the query genome (query) once this package is installed.
+Inside scripts folder there is a wrapper script called *launcher.sh*. In order to use it to execute BESTur, it is needed to change the path to candida genomes database (candidaDB) file and the path of the query genome (query) once this package is installed. Yo can modify and test different parameters changing the values of the variables inside this script.
