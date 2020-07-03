@@ -20,17 +20,23 @@ sudo make install
 
 This command will copy python libraries to /usr/lib/python2.7 path and will make link files in the path of the binaries /usr/bin to the scripts allocated in the scripts folder. You can change the paths modifying the variables binary_path and python_lib as follow.
 
+~~~
 sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib install
+~~~
 
 In order to uninstall this pipeline just type either one of the following commands depending on how you installed it.
 
 for default instalation.
 
+~~~
 sudo make clear
+~~~
 
 or for custom installation
 
+~~~
 sudo make binary_path=/custom/path/to/binaries python_lib=/user/python/lib clear
+~~~
 
 # Usage
 useq_progressive2.sh [--query fasta] [--db txt_file] [--size int] [-steps int] [--task blast_task] [--evalue numeric] [--qcov numeric] [--identity numeric] [--reward int] [--penalty int] [--gopen int] [--gext int] [--min_frags_per_transfrag int] [--overlap_radius int] [--experiment_name alphanum]
