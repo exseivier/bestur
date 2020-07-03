@@ -1,11 +1,4 @@
 Calbicans.genome.fas
-Ccastellii.genome.fas
 Cglabrata.genome.fas
-Cguilliermondii.genome.fas
-Ckrusei.genome.fas
-Corthopsilosis.genome.fas
-Cparapsilosis.genome.fas
-Ctropicalis.genome.fas
 Chaemulonis.genome.fas
-Cduobushaemulonis.genome.fas
 Cpseudohaemulonis.genome.fas
